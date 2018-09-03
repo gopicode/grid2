@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<title>Spreadsheet</title>
+    	<link rel="stylesheet" type="text/css" href="main.css"/>
+    </head>
+    <body>
+		<div class="actions">
+			<input type="number" id="row-count" placeholder="rows" size="5" />
+			<button id="append-rows">Append Rows</button>
+			<input type="number" id="col-count" placeholder="cols" size="5" />
+			<button id="append-cols">Append Cols</button>
+			<span class="sep"></span>
+			<span class="address" id="txt-address">&nbsp;</span>
+			<span class="value" id="txt-value">&nbsp;</span>
+		</div>
+		<div id="root" class="content"></div>
+		<ul id="menu-col" class="menu hide">
+			<li data-action="delete">Delete</li>
+			<li data-action="sort-az">Sort Ascending</li>
+			<li data-action="sort-za">Sort Desending</li>
+			<li data-action="insert-back">Insert Column Before</li>
+			<li data-action="insert-next">Insert Column After</li>
+		</ul>
+		<ul id="menu-row" class="menu hide">
+			<li data-action="delete">Delete</li>
+			<li data-action="insert-above">Insert Row Above</li>
+			<li data-action="insert-below">Insert Row Below</li>
+		</ul>
+		<script src="data.js"></script>
+		<script src="main.js"></script>
+    </body>
+</html>
